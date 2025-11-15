@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartShop AI Personal Shopper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">SmartShop</div>
+    </nav>
+    
+    <div class="container">
+        <div class="chat-box">
+            <div id="chatHistory" class="chat-history">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Ask me something...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        <div id="productResults" class="results-grid">
+            <!-- Recommended product cards will appear here -->
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
